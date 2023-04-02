@@ -1,0 +1,9 @@
+{{extend 'layout.html'}}
+<h1>This is the new.html template</h1>
+<h2>
+    {{==msg}}
+    {{for i in name}}
+    <p>{{name[i]}}</p>
+    {{pass}}
+</h2>
+{{=BEAUTIFY(response._vars)}}
